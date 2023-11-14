@@ -40,3 +40,5 @@ for (directory_path, directory_names, file_names) in os.walk(root_directory):
     # snow login will update the app.toml file with the correct path to the snowsql config file
     os.system(f"snow login -c {root_directory}/config -C dev")
     os.system(f"snow {app_type} create")
+    
+
